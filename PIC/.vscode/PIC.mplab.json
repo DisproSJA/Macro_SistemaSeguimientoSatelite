@@ -1,0 +1,66 @@
+{
+    "version": "1.9",
+    "configurations": [
+        {
+            "name": "default",
+            "id": "conf1",
+            "device": "PIC16F18446",
+            "imagePath": "./out/PIC/default.elf",
+            "packs": [
+                {
+                    "name": "PIC16F1xxxx_DFP",
+                    "vendor": "Microchip",
+                    "version": "1.32.471"
+                }
+            ],
+            "fileSet": "default",
+            "toolchain": "default-XC8"
+        }
+    ],
+    "propertyGroups": [
+        {
+            "name": "default-XC8",
+            "type": "toolchain",
+            "provider": "microchip.toolchains:xc8@4.00",
+            "properties": {
+                "HI-TECH-COMP.extra-include-directories": [
+                    "include"
+                ]
+            }
+        }
+    ],
+    "fileSets": [
+        {
+            "name": "default",
+            "files": [
+                "src/main.c",
+                "src/bits_configuracion.c",
+                "src/pines.c",
+                "src/interrupciones.c",
+                "src/temporizador.c",
+                "src/uart.c",
+                "src/encoder.c",
+                "src/drv8871_pwm.c",
+                "src/paso_drv8825.c",
+                "src/control_pid.c",
+                "src/referencia.c",
+                "src/protocolo.c",
+                "src/telemetria.c",
+                "include/configuracion.h",
+                "include/pines.h",
+                "include/interrupciones.h",
+                "include/temporizador.h",
+                "include/uart.h",
+                "include/encoder.h",
+                "include/drv8871_pwm.h",
+                "include/paso_drv8825.h",
+                "include/control_pid.h",
+                "include/referencia.h",
+                "include/protocolo.h",
+                "include/telemetria.h",
+                "PIC/out/firmware.hex",
+                "PIC/out/firmware.elf"
+            ]
+        }
+    ]
+}

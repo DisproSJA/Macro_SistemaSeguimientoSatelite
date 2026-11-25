@@ -1,0 +1,22 @@
+# Proyectos de referencia del curso anterior (no se suben)
+Insumos/GUI_Micro3/
+Insumos/Micro3/
+
+# Python
+__pycache__/
+*.pyc
+GUI/.skyfield/
+
+# MPLAB / XC8: se generan al compilar
+PIC/_build/
+PIC/out/
+PIC/cmake/
+*.elf
+*.hex
+*.p1
+*.d
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
